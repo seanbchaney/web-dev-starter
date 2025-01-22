@@ -4,14 +4,19 @@ import sinon from 'sinon';
 
 QUnit.module('main.js tests', function() {
 
-    QUnit.test('helloWorld should print Hello World to the console', function(assert) {
-        //Arrange
-        const consoleSpy = sinon.spy(console, 'log');
-        //Act
+    QUnit.test('helloWorld should display Hello World in an alert', function(assert) {
+        // Arrange
+        const alertSpy = sinon.spy();
+        global.alert = alertSpy; // Mock alert for Node.js environment
+    
+        // Act
         helloWorld();
-        //Assert
-        assert.ok(consoleSpy.calledWith('Hello World'), 'console.log should be called with Hello World');
-        consoleSpy.restore();
+    
+        // Assert
+        assert.ok(alertSpy.calledWith('Hello World'), 'alert should be called with "Hello World"');
+    
+        // Cleanup
+        delete global.alert;
     });
 
     QUnit.test('add should return the sum of two numbers', function(assert) {

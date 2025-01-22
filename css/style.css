@@ -1,4 +1,42 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 20px;
+}
+
+/* 2. Style the headings */
+h1 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+/* 3. Style the buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* 4. Style the form inputs */
+input[type="number"] {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* 5. Style the image */
+img {
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #ddd;
+  border-radius: 10px;
 }
