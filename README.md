@@ -8,6 +8,11 @@ that are written in plain HTML, CSS, and JavaScript.
 
 To get started, clone this repository and run the following commands:
 
+1. Make sure you have live preview installed.
+2. Press F1 (may need to do FN + F1).
+3. Start live preview.
+4. Copy the URL given in terminal (or use this: http://127.0.0.1:3000/) and open in browser.
+
 ```bash
 npm install
 ```
